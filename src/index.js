@@ -87,22 +87,6 @@ function changeUnits() {
   }
 }
 
-// show input element to make city
-
-function showCityInputFunction() {
-  const span = document.querySelector(".city-span");
-  const cityInputDiv = document.querySelector(".city-input");
-  if (showCityInput === 0) {
-    span.textContent = "Cancel";
-    cityInputDiv.style.display = "flex";
-    showCityInput = 1;
-  } else if (showCityInput === 1) {
-    span.textContent = "Add city";
-    cityInputDiv.style.display = "none";
-    showCityInput = 0;
-  }
-}
-
 units.addEventListener("click", changeUnits);
 
 searchInput.addEventListener("keydown", function (e) {
