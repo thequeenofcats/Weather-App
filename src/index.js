@@ -61,7 +61,7 @@ async function getWeatherData(cityName) {
   maxTempElement.textContent = Math.ceil(tempMax) + degrees;
   humidityElement.textContent = humidity + "%";
   windElement.textContent = wind + windUnits;
-  statusImg.src = "/src/icons/" + icon + ".png";
+  statusImg.src = "./icons/" + icon + ".png";
   sunriseElement.textContent = sunrise;
   sunsetElement.textContent = sunset;
   currentTempUnit.textContent = degrees;
@@ -87,21 +87,6 @@ function changeUnits() {
   }
 }
 
-// show input element to make city
-
-function showCityInputFunction() {
-  const span = document.querySelector(".city-span");
-  const cityInputDiv = document.querySelector(".city-input");
-  if (showCityInput === 0) {
-    span.textContent = "Cancel";
-    cityInputDiv.style.display = "flex";
-    showCityInput = 1;
-  } else if (showCityInput === 1) {
-    span.textContent = "Add city";
-    cityInputDiv.style.display = "none";
-    showCityInput = 0;
-  }
-}
 
 units.addEventListener("click", changeUnits);
 
