@@ -18,7 +18,6 @@ const currentTempUnit = document.querySelector(".current-temp-unit");
 const API_ID = "3bbd7ee48b8a631e284ba0e3b341a009";
 let unit = "&units=metric";
 let degrees = "°C";
-let showCityInput = 0;
 let windUnits = " m/s";
 
 // Get weather data
