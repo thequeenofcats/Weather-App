@@ -60,7 +60,7 @@ async function getWeatherData(cityName) {
   maxTempElement.textContent = Math.ceil(tempMax) + degrees;
   humidityElement.textContent = humidity + "%";
   windElement.textContent = wind + windUnits;
-  statusImg.src = "/src/icons/" + icon + ".png";
+  statusImg.src = "./src/icons/" + icon + ".png";
   sunriseElement.textContent = sunrise;
   sunsetElement.textContent = sunset;
   currentTempUnit.textContent = degrees;
